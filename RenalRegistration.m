@@ -2,6 +2,7 @@
 %Week 10/20/20 - 10/27/20
 
 %clear;
+%File is not current with current images produced. Refer to RenalRegistrationUpdated for current file
 
 %these values were computed earlier, but since registering images with
 %elastix takes a long time, just load the results from earlier.
