@@ -101,15 +101,15 @@ for i = 1:16
 end
 
 %calculate the average of the registered images
-AverageRegLeftControl = sumRegLeftControl/16;
-AverageRegRightControl = sumRegRightControl/16;
-AverageRegLeftLabel = sumRegLeftLabel/16;
-AverageRegRightLabel = sumRegRightLabel/16;
+AverageRegLeftControl = sumRegLeftControl/(numImages/2);
+AverageRegRightControl = sumRegRightControl/(numImages/2);
+AverageRegLeftLabel = sumRegLeftLabel/(numImages/2);
+AverageRegRightLabel = sumRegRightLabel/(numImages/2);
 %coregister the average left and right registered label with the average registered left and right control respectively.
 [~,CoregLabelLeft] = elastix(AverageRegLeftLabel, AverageRegLeftControl, [], {'RigidParameters.txt'});
 [~,CoregLabelRight] = elastix(AverageRegRightLabel, AverageRegRightControl, [], {'RigidParameters.txt'});
 
-%calculate the average left and right registered images
+%calculate the average control and coregistered label image.
 AverageRegControl(:,1:col/2) = AverageRegLeftControl;
 AverageRegControl(:,col/2 + 1:col) = AverageRegRightControl;
 CoregLabel(:,1:col/2) = CoregLabelLeft.transformedImages{1};
