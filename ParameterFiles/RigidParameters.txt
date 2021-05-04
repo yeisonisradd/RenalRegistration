@@ -24,7 +24,7 @@
 (ImagePyramidSchedule 8 8  4 4  2 2  1 1 )
 (MaximumNumberOfIterations 1000)
 (NumberOfSpatialSamples 3000)
-(ImageSampler "Random")
+(ImageSampler "RandomCoordinate")
 (BSplineInterpolationOrder 1)
 (FinalBSplineInterpolationOrder 3)
 (DefaultPixelValue 0)
