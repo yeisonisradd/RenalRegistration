@@ -96,10 +96,15 @@ AverageRegControl(:,col/2 + 1:col) = AverageRegRightControl;
 CoregLabel(:,1:col/2) = CoregLabelLeft.transformedImages{1};
 CoregLabel(:,col/2 + 1:col) = CoregLabelRight.transformedImages{1};
 
-ASLImage2 = (abs(AverageRegControl - double(CoregLabel)));
+%create the standard difference image from the difference of the average control and label
+ASLImage1 = (abs(AverageControl-AverageLabel));
+%create the asl image from the difference of the registered control and the coregistered label
+ASLImage2 = (abs(AverageRegControl - CoregLabel));
 
 
 figure(1)
+imshow(ASLImage1, []);
+title('Renal Perfusion Image Obtained without Registration Techniques');
+figure(2)
 imshow(ASLImage2, []);
 title('Renal Perfusion Image Obtained with Registration Techniques');
-
