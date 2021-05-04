@@ -7,7 +7,6 @@
 (Interpolator "LinearInterpolator")
 (ResampleInterpolator "FinalBSplineInterpolator")
 (Resampler "DefaultResampler")
-(Sampler "RandomCoordinate")
 (NewSamplesEveryIteration "true")
 (FixedImagePyramid "FixedSmoothingImagePyramid")
 (MovingImagePyramid "MovingSmoothingImagePyramid")
