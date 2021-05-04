@@ -116,7 +116,7 @@ CoregLabel(:,1:col/2) = CoregLabelLeft.transformedImages{1};
 CoregLabel(:,col/2 + 1:col) = CoregLabelRight.transformedImages{1};
 
 %create the standard difference image from the difference of the average control and label
-ASLImage1 = (abs(AverageControl-AverageLabel
+ASLImage1 = (abs(AverageControl-AverageLabel));
 %create the asl image from the difference of the registered control and the coregistered label
 ASLImage2 = (abs(AverageRegControl - CoregLabel));
 
