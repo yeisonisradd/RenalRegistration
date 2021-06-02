@@ -31,7 +31,7 @@
 (ResultImageFormat "mhd")
 (WriteTransformParametersEachIteration "false")
 (WriteTransformParametersEachResolution "false")
-(ShowExactMetricValue "true")
+(ShowExactMetricValue "false")
 (FixedInternalImagePixelType "float")
 (MovingInternalImagePixelType "float")
 (CompressResultImage "false")
