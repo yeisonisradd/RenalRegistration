@@ -33,5 +33,5 @@
 (CompressResultImage "false")
 (WriteTransformParametersEachIteration "false")
 (WriteTransformParametersEachResolution "false")
-(ShowExactMetricValue "true")
+(ShowExactMetricValue "false")
 
