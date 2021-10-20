@@ -1,1 +1,1 @@
-These files are used to complete the elastix registration. Note that their are two versions. The RandomPoint folder has the sampler collect points from the entire image, while the randomregion folder has the sampler collect points from a selected random voxel of a set region size. 
+These files are used to complete the elastix registration. Note that their are two versions. The RandomPoint folder has the sampler collect points from the entire image, while the RandomRegion folder has the sampler collect points from a selected random voxel of a set region size. 
