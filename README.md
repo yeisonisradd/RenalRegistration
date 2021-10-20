@@ -6,4 +6,4 @@ Negative control is also created, where process is repeated but without image re
 
 Note, for use of this program ensure that the matlab_elastix program is downloaded. This program creates matlab wrappers for the elastix program. For additional information/download refer to: https://github.com/raacampbell/matlab_elastix/blob/master/README.md
 
-Parameter files are essential for all versions of the registration programs. To properly run the program, ensure that parameter files are in the directory path or located in the same file as the program. 
+Parameter files are essential for all versions of the registration programs. They are where the elastix parameters are defined, and as such, are how we edit the image registrations. To properly run the program, ensure that parameter files are in the directory path or located in the same file as the program. 
